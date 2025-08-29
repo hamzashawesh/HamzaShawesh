@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background: #f9f9f9;
+  color: #222;
+  line-height: 1.6;
+  direction: rtl;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: auto;
+  padding: 10px 20px;
+}
+
+header {
+  background-color: #0d1b2a;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #fca311;
+}
+
+#hero {
+  background: linear-gradient(to left, #0d1b2a, #1b263b);
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  animation: fadeIn 2s ease forwards;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #14213d;
+}
+
+.section p {
+  max-width: 700px;
+  margin: auto;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.section.light {
+  background-color: #fff;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.card {
+  background-color: #e5e5e5;
+  padding: 20px;
+  border-radius: 10px;
+  min-width: 150px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.project {
+  background-color: #fff3e0;
+}
+
+.email {
+  display: inline-block;
+  margin-top: 15px;
+  color: #0077b6;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.email:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #0d1b2a;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
